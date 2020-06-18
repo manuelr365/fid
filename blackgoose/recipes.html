@@ -3,56 +3,95 @@
       <title>Black Goose Bistro</title>
       <style>
 
-        body
-        {
-        background-color: #ffcc66;
-        margin: 0 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        }
-        h1
-        {
-        text-align: center;
-        font-family: serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        border-bottom: 1px solid #00b100;
-        margin-top: 30px;
-        }
-        h2
-        {
-        color: #dd633c;
-        font-size: 1em;
-        }
+              body
+              {
+              background-color: #ffcc66;
+              margin: 0 5%;
+              font-family: Arial, Helvetica, sans-serif;
+              }
+              h1
+              {
+              text-align: center;
+              font-family: serif;
+              font-weight: normal;
+              text-transform: uppercase;
+              border-bottom: 1px solid #00b100;
+              margin-top: 30px;
+              }
+              h2
+              {
+              color: #dd633c;
+              font-size: 1em;
+              }
 
-        .topnav
-        {
-          overflow: hidden;
-          background-color: #333;
-        }
+              .topnav
+              {
+                overflow: hidden;
+                background-color: #333;
+              }
 
-        .topnav a
-        {
-          float: left;
-          color: #ffcc66;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-        }
+              .topnav a
+              {
+                float: left;
+                color: #ffcc66;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+              }
 
-        .topnav a:hover
-        {
-          background-color: #ddd;
-          color: black;
-        }
+              .topnav a:hover
+              {
+                background-color: #ddd;
+                color: black;
+              }
 
-        .topnav a.active
-        {
-          background-color: #dd633c;
-          color: ffcc66;
-        }
+              .topnav a.active
+              {
+                background-color: #dd633c;
+                color: ffcc66;
+              }
 
+                      .collapsible
+                      {
+                        background-color: #333;
+                        color: white;
+                        cursor: pointer;
+                        padding: 18px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 15px;
+                      }
 
+                      .active, .collapsible:hover
+                      {
+                        background-color: #dd633c;
+                      }
+
+                      .collapsible:after
+                      {
+                        content: '\002B';
+                        color: white;
+                        font-weight: bold;
+                        float: right;
+                        margin-left: 5px;
+                      }
+
+                      .active:after
+                      {
+                        content: "\2212";
+                      }
+
+                      .content
+                      {
+                        padding: 0 18px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        background-color: #f1f1f1;
+                      }
       </style>
 
 </head>
@@ -71,34 +110,72 @@
 
 <body>
 
-<h1>Tapenade (Olive Spread)</h1>
-<p>
-    This is a really simple dish to prepare and it’s always a big hit at parties. My father recommends:
-</p>
-<blockquot cite="http://">
-    <p>
-        “Make this the night before so that the flavors have time to blend. Just bring it up to room temperature before you serve it. In the winter, try serving it warm.”
-</p>
-</blockquote>
+<h1>Recipe Gallery</h1>
+<button class="collapsible">Tapenade (Olive Spread)</button>
+<div class="content">
+  <p>
+      This is a really simple dish to prepare and it’s always a big hit at parties. My father recommends:
+  </p>
+  <blockquot cite="http://">
+      <p>
+          “Make this the night before so that the flavors have time to blend. Just bring it up to room temperature before you serve it. In the winter, try serving it warm.”
+  </p>
+  </blockquote>
 
-<h2>Ingredients</h2>
-<ul>
-    <li>1 8oz. jar sundried tomatoes</li>
-    <li>1 8oz. jar sundried tomatoes</li>
-    <li>2 large garlic cloves</li>
-    <li>2/3 c. kalamata olives</li>
-    <li>1 t. capers</li>
-</ul>
+  <h2>Ingredients</h2>
+  <ul>
+      <li>1 8oz. jar sundried tomatoes</li>
+      <li>1 8oz. jar sundried tomatoes</li>
+      <li>2 large garlic cloves</li>
+      <li>2/3 c. kalamata olives</li>
+      <li>1 t. capers</li>
+  </ul>
 
-<h2>Instructions</h2>
-<ol>
-  <li>Combine tomatoes and garlic in a food processor.</li>
-  <li>Blend until as smooth as possible.</li>
-  <li>  Add capers and olives.</li>
-  <li>Pulse the motor a few times until they are incorporated, but still retain some texture.</li>
-  <li>  Serve on thin toast rounds with goat cheese and fresh basil garnish (optional).</li>
-</ol>
+  <h2>Instructions</h2>
+  <ol>
+    <li>Combine tomatoes and garlic in a food processor.</li>
+    <li>Blend until as smooth as possible.</li>
+    <li>  Add capers and olives.</li>
+    <li>Pulse the motor a few times until they are incorporated, but still retain some texture.</li>
+    <li>  Serve on thin toast rounds with goat cheese and fresh basil garnish (optional).</li>
+  </ol>
+  <img src="Gallery/tepanade.jpg" alt="Tepanade" style="width:600px;height:400px;"title="Photo of Tepanade">
+</div>
 
-<img src="TepanadePhoto.jpg" alt="Image" style="width:400px;height:266px;"title="Photo of Tepanade">
+<button class="collapsible">Our Baked Goods</button>
+<div class="content">
+  <p>We start our day at the crack of dawn to bake our own muffins, bread, and dinner rolls. Loaves not used that day are donated to the local food shelter. </p>
+  <img src="Gallery/bread.jpg" alt="close-up of sliced rustic bread" style="width:600px;height:450px;">
+</div>
+
+
+<button class="collapsible">Our Burgers</button>
+<div class="content">
+  <p>People come from all over to enjoy our lovingly made burgers. We grind our own locally-sourced organic beef and turkey so you know it's fresh and free from fillers and other nonsense. Go for one of our creative topping combos or stick with the classics.</p>
+  <img src="Gallery/burgers.jpg" alt="Our Burgers"style="width:600px;height:450px;">
+</div>
+
+<button class="collapsible">Catch of the Day</button>
+<div class="content">
+  <p>Our chef works with local fisherman to pick the freshest the sea has to offer for our daily seafood special. Our Roast Cod Caponata with Roasted Potatoes is an old favorite with our regulars.</p>
+  <img src="Gallery/fish.jpg" alt="Our catch"style="width:600px;height:450px;">
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </body>

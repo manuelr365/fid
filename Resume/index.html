@@ -1,63 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-	<title>Manuel Rodriguez - Resume</title>
+<head>
+	<meta charset="utf-8" />
+	<title>Manuel Rodriguez</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!-- just in case viewer is using Internet Explorer -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<style>
+	div.gallery
+	{
+	  margin: 5px;
+	  border: 1px solid #ccc;
+	  float: left;
+	  width: 180px;
+	}
+
+	div.gallery:hover {
+	  border: 1px solid #777;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	}
+
+	div.desc {
+	  padding: 15px;
+	  text-align: center;
+	}
+	</style>
 </head>
-	<body>
-			<img src="headshot.jpg" alt="Manuel Rodriguez">
 
-			<h1>Manuel Rodriguez</h1>
-			<p>Language Instructor</p>
-			<br>
+<body>
 
-			<h2>Personal details</h2>
-			<ul>
-				<li>e-mail: <a href="mailto:manuelr.contact@gmail.com" target="_blank">manuelr.contact@gmail.com</a></li>
-				<li>phone: 01234567890</li>
-			</ul>
-			<br>
+	<!-- Header-->
+	<header>
+		<h1>Manuel Rodriguez</h1>
+		<p>3D Designer and Animator</p>
+	</header>
 
-			<h2>Personal Profile</h2>
-			<p>Language instructor. <strong>TESOL/TEFL</strong> certified.</p>
-			<br>
+	<div class="container">
 
-			<h2>Work Experience</h2>
+		<!-- Spotlight -->
+		<section class="spotlight">
+			<div class="container">
+				<div class="row">
+					<div class="grid-3">
+						<img src="img/portrait.jpg">
+					</div>
+					<div class="grid-3">
+						<h1>Manuel Rodriguez</h1>
+						<p>Thanks for coming, here's a bit about me and my work! If you need any help with your 3D projects, reach out ot me!</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-					<h3>Valencia College</h3>
+<hr>
+
+		<!-- Gallery Block-->
+		<section class="gallery">
+			<h1 class="center">Gallery</h1>
+			<div class="row">
+				<a target="_blank" href="SteampunkProject\01.png"><img src="SteampunkProject\01.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\02.png"><img src="SteampunkProject\02.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\03.png"><img src="SteampunkProject\03.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\04.png"><img src="SteampunkProject\04.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\05.png"><img src="SteampunkProject\05.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\06.png"><img src="SteampunkProject\06.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\07.png"><img src="SteampunkProject\07.png" class="grid-2"></a>
+				<a target="_blank" href="SteampunkProject\08.png"><img src="SteampunkProject\08.png" class="grid-2"></a>
+
+			</div>
+		</section>
+
+		<hr>
+
+
+	<!-- New container-->
+	<div class="container">
+		<section class="education">
+			<h1>Education</h1>
+			<h2>
+				<li>B.S. Systems Egnineering from UGMA (Venezuela)</li>
+				<li>A.S. TESOL/TEFL from GLOBAL TEFL (United Kigdom)</li>
+				<li>A.S. Digital Media - Videogames Development (United States)</li>
+			</h2>
+		</section>
+
+		<hr>
+
+		<!--Experience Tables-->
+		<section class="experience">
+			<div class="row">
+				<h1>Experience</h1>
+				<div class="grid-2">
+					<h2>Valencia College</h2>
 					<p>February 2017 - Present</p>
-					<p>Spanish and English Professor</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Spanish and English Professor</li>
+						<li>TESOL/TEFL Specialist</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-					<h3>Berlitz Language Academy - Mexico</h3>
-					<p>January 2016 - January 2017</p>
-					<p>Spanish, French and English instructor</p>
+		<hr>
 
-					<h3>Berlitz Language Academy - Brazil</h3>
-					<p>January 2015 - December 2015</p>
-					<p>Spanish, French and English instructor</p>
-					<br>
+		<section>
+			<!--List of skills-->
+			<div class="row">
+				<div class="grid-2">
+					<h1>Skills</h1>
+					<ul>
+						<li>Graphic Design</li>
+						<li>3D Animation</li>
+						<li>Programming</li>
+						<li>Web Design</li>
+					</ul>
+				</div>
+				<div class="grid-4">
+					<h1>In Conclusion</h1>
+					<p>
+Reach out to me if you want to build your 3D world!
+						<a href="mailto:manuelr.contact@gmail.com?Subject=Request%20Help" target="_top">email</a> or
+						<a href="http://www.https://twitter.com/Marv_365">tweet</a> at me.
+					</p>
+				</div>
+			</div>
+		</section>
 
-			<h2>Key Skills</h2>
-				<ul>
-					<li>Graphic Design</li>
-					<li>3D Animation</li>
-					<li>Programming</li>
-					<li>Web Design</li>
-				</ul>
-				<br>
 
-				<h2>Education</h2>
-					<h3>University of Houston - Texas</h3>
-					<p><i>Qualification</i></p>
-					<p>Language Instruction</p>
 
-					<h3>Global TEFL - United Kingdom</h3>
-					<p><i>Qualification</i></p>
-					<p>TESOL/TEFL Certification</p>
+		<!--Footer-->
+		<footer class="center">
+			<hr>
+			<span>&copy; Manuel Rodriguez 2020</span>
+		</footer>
 
-					<h3>Seminole State College - Florida</h3>
-					<p><i>Qualification</i></p>
-					<p>AS Digital Media: Videogames Development (Current)</p>
+	</div><!-- End Container -->
+
 </body>
 </html>

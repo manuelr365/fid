@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset ="utf-8">
+      <title>Black Goose Bistro</title>
+      <style>
+
+        body
+        {
+        background-color: #ffcc66;
+        margin: 0 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        h1
+        {
+        text-align: center;
+        font-family: serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid #00b100;
+        margin-top: 30px;
+        }
+        h2
+        {
+        color: #dd633c;
+        font-size: 1em;
+        }
+
+        .topnav
+        {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a
+        {
+          float: left;
+          color: #ffcc66;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover
+        {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active
+        {
+          background-color: #dd633c;
+          color: ffcc66;
+        }
+
+
+      </style>
+
+</head>
+<!--- Top Navigation Bar -->
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="news.html">News</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="services.html">Services</a>
+  <a href="about.html" target="_blank">About Chef Jen</a>
+</div>
+<!--- Top Navigation Bar -->
+
+<body>
+
+<h1>Blackstone Bistro | Pizza-Instant-Demand</h1>
+
+<p>Our 12" wood-fired-organic-from-scratch-gluten-free pizzas are available for delivery. Build your own and we'll deliver it within an hour.</p>
+
+
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+
+<fieldset>
+  <legend>Your Information</legend>
+  <ul>
+    <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+    <li>Delivery instructions:<br>
+    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+  </ul>
+</fieldset>
+
+<h2>make your pizza:</h2>
+
+<fieldset>
+  <legend>Pizza specs</legend>
+  <fieldset>
+    <legend>Crust <em>(Choose only one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+      <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+      <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
+      <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Toppings <em>(Choose as many as you want)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Clickers Fungus Mushrooms</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many pizzas:
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+  </select>
+  </p>
+  </fieldset>
+
+</fieldset> <!-- closes 'Pizza Specs' fieldset -->
+
+<p><input type="submit" value="Submit you order!!">
+<input type="reset"></p>
+
+<p><a href="index.html">Back to the home page</a></p>
+
+</form>
+
+</body>
+</html>
